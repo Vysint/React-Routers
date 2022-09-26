@@ -1,15 +1,22 @@
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
     <section>
       <h2>The Products Page</h2>
       <ul>
-        <li>Product1</li>
-        <li>Product2</li>
-        <li>Product3</li>
+        <li>
+          <Link to="/products/p1">Book</Link>
+        </li>
+        <li>
+          <Link to="/products/p2">Plane</Link>
+        </li>
+        <li>
+          <Link to="/products/p3">Table</Link>
+        </li>
       </ul>
-      </section>
-  )
-}
+    </section>
+  );
+};
 
 export default Products;
